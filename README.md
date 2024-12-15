@@ -86,7 +86,7 @@
 
     - ### Time Complexity:
         - **$O(n*log(n))$**: 
-            - Counting the frequencies using the `map` takes **$O(n*log(n))$** time because inserting an element into a `map` takes **$O(log(n)$** time, and we perform this operation for each of the $n\ $ elements in `nums`.
+            - Counting the frequencies using the `map` takes **$O(n*log(n))$** time because inserting an element into a `map` takes **$O(log(n)$** time, and we perform this operation for each of the $n$ elements in `nums`.
             - Building the `extra_memory` array by iterating over the `map` takes **$O(n)$** time, as we iterate through each unique number and its frequency.
 
         Overall, the time complexity is dominated by the **$O(n*log(n))$** due to the use of the `map`.
