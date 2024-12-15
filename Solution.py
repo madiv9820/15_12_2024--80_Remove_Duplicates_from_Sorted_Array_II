@@ -10,9 +10,10 @@ class Solution:
         extra_memory = []
         
         # Step 3: Iterate through each unique number in nums (using set to avoid duplicates)
-        for num in set(nums):
+        # We iterate through the sorted items of num_Count so that the numbers are placed in sorted order
+        for num, freq in sorted(num_Count.items()):
             # If the number appears more than once, add it twice to extra_memory
-            if num_Count[num] > 1: extra_memory += [num] * 2  # Add the number twice if it appears more than once
+            if freq > 1: extra_memory += [num] * 2  # Add the number twice if it appears more than once
             else: extra_memory += [num]  # If the number appears only once, add it once
         
         # Step 4: Copy the elements from extra_memory back to nums
