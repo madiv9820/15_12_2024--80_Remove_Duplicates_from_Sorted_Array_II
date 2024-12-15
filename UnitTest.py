@@ -4,8 +4,8 @@ from timeout_decorator import timeout
 
 class UnitTest(unittest.TestCase):
     def setUp(self):
-        self.__testcases = {1: ([1,1,1,2,2,3], (5, [1,1,2,2,3])),
-                            2: ([0,0,1,1,1,1,2,3,3], (7, [0,0,1,1,2,3,3]))}
+        self.__testcases = {1: ([1,1,1,2,2,3], 5, [1,1,2,2,3]),
+                            2: ([0,0,1,1,1,1,2,3,3], 7, [0,0,1,1,2,3,3])}
         self.__obj = Solution()
         return super().setUp()
     
